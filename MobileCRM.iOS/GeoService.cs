@@ -23,6 +23,11 @@ namespace MobileCRM.Services
 
         #region IGeoService implementation
 
+		/// <summary>
+		/// Validates the address.
+		/// </summary>
+		/// <returns>The address.</returns>
+		/// <param name="address">Address.</param>
         public IEnumerable<Address> ValidateAddress (string address)
         {
             var coder = new CLGeocoder();
