@@ -45,6 +45,10 @@ namespace MobileCRM.Services
             return results;
         }
 
+		/// <summary>
+		/// Raises the completion event.
+		/// </summary>
+		/// <param name="placemarks">Placemarks.</param>
         IEnumerable<Address> OnCompletion(CLPlacemark[] placemarks)
         {
             var matches = new List<Address>();
